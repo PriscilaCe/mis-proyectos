@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Landing</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <header>
+            <img src="" alt="">
+        </header>
+        <nav class="blog_nav_container">
+            <div>
+                <a><img src="img/logo.png" alt="" class="logo"></a>
+            </div>
+        </nav>
+                
+        <section class="content">
+            <ul class="img_redes">
+                <li>
+                   <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="imagen de facebook" class="redes"></a> 
+                </li>
+                <li>
+                   <a href="#"> <img src="img/linkedln.png" alt="imagen de linkedln" class="redes"></a>
+                </li>
+                <li>
+                   <a href="https://ar.pinterest.com/"><img src="img/pinterest.png" alt="imagen de pinterest" class="redes"></a> 
+                </li>
+            </ul>
+            <aside class="content_left">
+                <h2>
+                    Lorem ipsum
+                </h2>
+                <p>
+                        In publishing and graphic design, lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation, such as web pages, typography, and graphical layout. It is a form of "greeking".
+                </p>
+            </aside>
+            
+                <div class="cuerpo_formulario">
+                    <form action="informacion.php" method="post">
+                        <h3>CONTACTARSE CONMIGO!</h3>
+                        <div class="form_fiel">
+                            <input type="text" name="name" id="name" class="form_group" placeholder="Escriba su nombre y apellido">
+                        </div>
+                        <div class="form_fiel">
+                                <input id="phone" type="tel" name="phone" class="form_group" maxlength="10 " placeholder="Escriba su telefono">
+                        </div>
+                        <div class="form_fiel">
+                                <input id="email" type="text" name="email" class="form_group" placeholder="Escriba su email">
+                        </div>
+                        <div class="form_fiel">
+                            <textarea name="message" class="form_group" id="coment" cols="30" rows="10" placeholder="Escriba su comentario"></textarea>
+                        </div>
+                        <div class="button_submit">
+                            <button type="submit" class="form_button" value="enviar" onclick="enviar()">REGISTRARSE</button>
+                        </div>
+                    </form>
+                </div>
+            
+        </section>
+            
+        <script>
+            function enviar() {
+                var name = document.getElementById("name").value;
+                var phone = document.getElementById("phone").value;
+                var email = document.getElementById("email").value;
+//Recupero los datos haciendo uso del DOM, y uso el método document.getElementById("") y con esto ya tengo el cuadro de texto
+//para obtener su valor utilizo el metodo value   
+//DOM Document Objet Model, es una interfaz de programación para los doc HTML Y XML. Facilita una representación estructurada del documento y define de que manera los programas pueden acceder, a fin de modificar tanto su estructura, estilo y contenido.             
+                if(name == ""){
+                    alert("Escribir el nombre");
+                    event.preventDefault();
+                }
+                if(phone == ""){
+                    alert("Escribir un telefono");
+                    event.preventDefault();
+                }
+                if(email == ""){
+                    alert("Escribir una dirección de correo");
+                    event.preventDefault();
+                }
+            }
+        </script>
+
+    </body>
+</html>

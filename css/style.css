@@ -1,0 +1,76 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+}
+.content {
+    width: 960px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    padding-top:100px;
+}
+.logo {
+    width: 40px;
+}
+.img_redes {
+    list-style: none;
+}
+.redes {
+    border-radius: 50%;
+    width: 35px;
+    flex-direction: column;
+}
+.img_redes li {
+    
+    margin-left: 10px;
+}
+.blog_nav_container {
+    padding: 15px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 1px 1px 2px 2px rgba(45,45,45,.3);
+    z-index: 100
+}
+.content_left{
+    width: 50%;
+    color:#ffff;
+    background-color: rgb(0, 0, 0,.7);
+    padding: 10px;
+    border-radius: 4px;
+}
+.form_fiel {
+    color: #140e02;
+    font-family: berlin-regular;
+    font-size: 20px;
+    height: 50px;
+    border: 2px solid #fafad2;
+    background-color: rgba(240, 237, 226, 0.9);
+    border-radius: 8px;
+}
+.form_group {
+    color:#140e02;
+    width: 150%;
+    height: 100%;
+    background: #f0e68c;
+    border-radius: 8px;
+}
+.form_button {
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-right: auto;
+    background: #00fa9a;
+    font-size: 30px;
+}
